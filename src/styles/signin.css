@@ -1,0 +1,91 @@
+.signin-wrapper {
+    width: 100%;
+    font-family: Roboto;
+}
+.signin-wrapper .main-container {
+    height: calc(100vh - 60px - 0px);
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.signin-wrapper .signin-button {
+    display: flex;
+    text-transform: none;
+    margin-bottom: 80px;
+    padding: 11px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: rgba(0, 0, 0, 0.54);
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+.signin-wrapper .signin-button:active{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+.signin-wrapper .signin-button img.google-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 28px;
+}
+@media screen and (max-width: 576px) {
+    .signin-wrapper .signin-button {
+        margin-bottom: 0;
+   }
+}
+.signin-wrapper .content {
+    color: #181818;
+    margin: 48px 0;
+    text-align: center;
+}
+@media screen and (max-width: 576px) {
+    .signin-wrapper .content {
+        margin: 10vw 0;
+   }
+}
+.signin-wrapper .content-title {
+    font-weight: 500;
+    font-family: 'Roboto';
+    text-align: center;
+    margin-top: 0;
+    font-size: 40px;
+}
+@media screen and (max-width: 576px) {
+    .signin-wrapper .content-title {
+        font-size: 8vw;
+   }
+}
+.signin-wrapper .image {
+    height: 96px;
+    max-height: 96px;
+}
+@media screen and (max-width: 576px) {
+    .signin-wrapper .image {
+        height: 30vw;
+   }
+}
+.signin-wrapper .heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #181818;
+    line-height: 1.5;
+}
+@media screen and (max-width: 576px) {
+    .signin-wrapper .heading {
+        font-size: 7vw;
+   }
+}
+.signin-wrapper .sub-heading {
+    font-size: 20px;
+    padding-top: 12px;
+    opacity: 1;
+    line-height: 1.5;
+}
+@media screen and (max-width: 576px) {
+    .signin-wrapper .sub-heading {
+        font-size: 5vw;
+   }
+}

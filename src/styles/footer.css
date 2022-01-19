@@ -1,0 +1,92 @@
+.footer-container {
+    height: 60px;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 20px;
+    flex-wrap: wrap;
+    line-height: 1.4;
+}
+.footer-container.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.footer-container .footer-content {
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    color: white;
+    width: 70%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+@media screen and (max-width: 992px) {
+    .footer-container .footer-content {
+        width: 85%;
+   }
+}
+@media screen and (max-width: 768px) {
+    .footer-container .footer-content {
+        width: 100%;
+   }
+}
+.footer-container .footer-content .company-icon {
+    vertical-align: middle;
+    height: 16px;
+}
+.footer-container .language-selector {
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .footer-container .language-selector.visible {
+        display: block;
+   }
+}
+.footer-container .language-selector.visible.inline {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 576px) {
+    .footer-container .language-selector.visible.inline {
+        display: none;
+   }
+}
+@media screen and (max-width: 300px) {
+    .footer-container .language-selector {
+        display: none !important;
+   }
+}
+.footer-container a.list-item {
+    display: inline-block;
+    padding: 5px 12px;
+    position: relative;
+    text-transform: none;
+    color: white;
+    text-decoration: none;
+    opacity: 0.65;
+}
+.footer-container a.list-item.active {
+    opacity: 1;
+}
+.footer-container a.list-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 18px;
+    height: 2px;
+    background-color: #f44336;
+    left: calc(50% - 9px);
+}
