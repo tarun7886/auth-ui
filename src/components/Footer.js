@@ -17,7 +17,7 @@ const Footer = ({ lang, app, path = "", position = 'static', visibleLangIndicato
 export default Footer
 
 const LanguageSelector = ({ path, lang, visible, inline }) => {
-    if (!visible) return null
+    if (!visible) return <span style={{display: 'none'}} ></span>
     return <div className={`language-selector visible ${inline ? 'inline' : ''}`}>
         <a className={`list-item ${lang === "en" && 'active'}`} href={`/en/${path}`}>
             English
