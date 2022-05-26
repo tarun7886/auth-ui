@@ -2,13 +2,12 @@
   "name": "@inshorts/authentication-ui",
   "version": "1.0.1",
   "description": "Google authentication signin page",
-  "main": "build/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "build": "webpack",
-    "prepublish": "NODE_ENV=production webpack",
-    "postinstall": "npm run build"
+    "prepublish": "NODE_ENV=production webpack"
   },
   "author": "tarunjain@inshorts.com",
   "license": "ISC",
