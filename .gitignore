@@ -1,7 +1,6 @@
 # Temporary files and folders
 *.ignore.*
 /tmp
-build/
 /libwebp-js/build
 # Logs
 logs
