@@ -1,6 +1,6 @@
 {
   "name": "@inshorts/authentication-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google authentication signin page",
   "main": "build/index.js",
   "scripts": {
